@@ -1,0 +1,717 @@
+"ID","School","Grade","Age_months","Gender","listType","time"
+"BOFR1A","San Martino",6,143,"M","T.Parole.AFC",8
+"BRAN1A","San Martino",6,141,"M","T.Parole.AFC",10
+"CAFE1A","San Martino",6,139,"M","T.Parole.AFC",11
+"CEDE1A","San Martino",6,145,"F","T.Parole.AFC",8
+"CODI1A","San Martino",6,142,"M","T.Parole.AFC",9
+"COGI1A","San Martino",6,143,"F","T.Parole.AFC",11
+"FANO1A","San Martino",6,138,"F","T.Parole.AFC",9
+"FRMA1A_SM","San Martino",6,141,"M","T.Parole.AFC",10
+"GACR1A","San Martino",6,147,"M","T.Parole.AFC",12
+"JUIV1A","San Martino",6,140,"M","T.Parole.AFC",9
+"MIRI1A","San Martino",6,144,"M","T.Parole.AFC",10
+"MIGI1A","San Martino",6,144,"F","T.Parole.AFC",8
+"MILE1A","San Martino",6,143,"M","T.Parole.AFC",9
+"MOSO1A","San Martino",6,144,"F","T.Parole.AFC",11
+"PABE1A","San Martino",6,147,"F","T.Parole.AFC",20
+"PIAL1A","San Martino",6,143,"M","T.Parole.AFC",9
+"SAGL1A","San Martino",6,146,"F","T.Parole.AFC",12
+"STCE1A","San Martino",6,143,"M","T.Parole.AFC",10
+"TARI1A","San Martino",6,138,"M","T.Parole.AFC",13
+"TOSO1A","San Martino",6,140,"F","T.Parole.AFC",19
+"VIAG1A","San Martino",6,147,"F","T.Parole.AFC",9
+"ANAN1C","San Martino",6,144,"F","T.Parole.AFC",14
+"ANFI1C","San Martino",6,138,"M","T.Parole.AFC",8
+"BEGI1C","San Martino",6,147,"M","T.Parole.AFC",13
+"BREL1C","San Martino",6,140,"F","T.Parole.AFC",11
+"CASA1C","San Martino",6,139,"M","T.Parole.AFC",24
+"DUMA1C","San Martino",6,145,"M","T.Parole.AFC",11
+"ELOM1C","San Martino",6,151,"F","T.Parole.AFC",9
+"FEEM1C","San Martino",6,146,"F","T.Parole.AFC",11
+"GUCA1C","San Martino",6,145,"F","T.Parole.AFC",8
+"LINI1C","San Martino",6,137,"M","T.Parole.AFC",11
+"LOSA1C","San Martino",6,147,"F","T.Parole.AFC",9
+"MATO1C","San Martino",6,139,"M","T.Parole.AFC",10
+"PAGU1C","San Martino",6,142,"M","T.Parole.AFC",15
+"PEGI1C","San Martino",6,142,"F","T.Parole.AFC",11
+"PELE1C","San Martino",6,143,"M","T.Parole.AFC",14
+"POAU1C","San Martino",6,142,"F","T.Parole.AFC",9
+"SIGI1C","San Martino",6,141,"F","T.Parole.AFC",9
+"SOYA1C","San Martino",6,144,"M","T.Parole.AFC",12
+"STSO1C","San Martino",6,146,"F","T.Parole.AFC",9
+"BRFR1E","San Martino",6,141,"M","T.Parole.AFC",10
+"BRNI1E","San Martino",6,139,"M","T.Parole.AFC",14
+"BUBE1E","San Martino",6,146,"F","T.Parole.AFC",10
+"CAEM1E","San Martino",6,137,"F","T.Parole.AFC",7
+"FRAN1E","San Martino",6,136,"F","T.Parole.AFC",15
+"MANI1E","San Martino",6,154,"M","T.Parole.AFC",9
+"MODA1E","San Martino",6,143,"M","T.Parole.AFC",9
+"OMBA1E","San Martino",6,148,"M","T.Parole.AFC",14
+"RUMA1E","San Martino",6,141,"F","T.Parole.AFC",13
+"SASA1E","San Martino",6,145,"F","T.Parole.AFC",11
+"SCGIA1E","San Martino",6,142,"M","T.Parole.AFC",14
+"STFI1E","San Martino",6,146,"M","T.Parole.AFC",11
+"TOSO1E","San Martino",6,140,"F","T.Parole.AFC",9
+"VIAN1E","San Martino",6,142,"F","T.Parole.AFC",20
+"ZOGA1E","San Martino",6,138,"F","T.Parole.AFC",14
+"ANGI1F","San Martino",6,137,"F","T.Parole.AFC",11
+"BADE1F","San Martino",6,138,"F","T.Parole.AFC",9
+"CAED1F","San Martino",6,138,"M","T.Parole.AFC",14
+"DEMA1F","San Martino",6,147,"M","T.Parole.AFC",11
+"DEPI1F","San Martino",6,147,"M","T.Parole.AFC",9
+"DEAL1F","San Martino",6,143,"M","T.Parole.AFC",10
+"DOMA1F","San Martino",6,152,"F","T.Parole.AFC",16
+"GEIS1F","San Martino",6,136,"F","T.Parole.AFC",8
+"GIVI1F","San Martino",6,138,"M","T.Parole.AFC",10
+"GOVA1F","San Martino",6,139,"F","T.Parole.AFC",9
+"GURI1F","San Martino",6,140,"M","T.Parole.AFC",8
+"LAFI1F","San Martino",6,142,"M","T.Parole.AFC",9
+"MAER1F","San Martino",6,136,"F","T.Parole.AFC",9
+"MEVI1F","San Martino",6,145,"F","T.Parole.AFC",10
+"PAAN1F","San Martino",6,142,"M","T.Parole.AFC",11
+"PEAL1F","San Martino",6,140,"M","T.Parole.AFC",9
+"PIAD1F","San Martino",6,137,"F","T.Parole.AFC",11
+"PIBR1F","San Martino",6,137,"F","T.Parole.AFC",9
+"PIGA1F","San Martino",6,136,"M","T.Parole.AFC",10
+"TEPI1F","San Martino",6,138,"M","T.Parole.AFC",10
+"VEAL1F","San Martino",6,138,"F","T.Parole.AFC",9
+"ZAAD1F","San Martino",6,146,"F","T.Parole.AFC",13
+"BAAL1B","San Martino",6,139,"M","T.Parole.AFC",11
+"BAVI1B","San Martino",6,136,"F","T.Parole.AFC",9
+"BADA1B","San Martino",6,146,"M","T.Parole.AFC",11
+"BRGI1B","San Martino",6,145,"M","T.Parole.AFC",10
+"COAL1B","San Martino",6,137,"F","T.Parole.AFC",8
+"DEST1B","San Martino",6,141,"M","T.Parole.AFC",10
+"FIGI1B","San Martino",6,147,"F","T.Parole.AFC",10
+"GRGL1B","San Martino",6,150,"F","T.Parole.AFC",10
+"GURI1B","San Martino",6,137,"M","T.Parole.AFC",12
+"JUCR1B","San Martino",6,147,"M","T.Parole.AFC",11
+"KEKA1B","San Martino",6,164,"F","T.Parole.AFC",18
+"PEMA1B","San Martino",6,136,"M","T.Parole.AFC",15
+"PEAN1B","San Martino",6,146,"F","T.Parole.AFC",8
+"PEJA1B","San Martino",6,142,"M","T.Parole.AFC",8
+"PILO1B","San Martino",6,141,"M","T.Parole.AFC",10
+"SCAN1B","San Martino",6,144,"F","T.Parole.AFC",10
+"STSO1B","San Martino",6,141,"F","T.Parole.AFC",8
+"TOSI1B","San Martino",6,144,"M","T.Parole.AFC",10
+"ZAMA1B","San Martino",6,146,"M","T.Parole.AFC",7
+"ZASA1B","San Martino",6,146,"F","T.Parole.AFC",7
+"ZUIR1B","San Martino",6,147,"F","T.Parole.AFC",9
+"CHAN1B","Cappelletti Turco",6,144,"F","T.Parole.AFC",10
+"LUCE1B","Cappelletti Turco",6,143,"M","T.Parole.AFC",14
+"DAGI1B","Cappelletti Turco",6,134,"M","T.Parole.AFC",15
+"ASMA1B","Cappelletti Turco",6,142,"F","T.Parole.AFC",12
+"MATMA1B","Cappelletti Turco",6,138,"M","T.Parole.AFC",11
+"VIPR1B","Cappelletti Turco",6,136,"F","T.Parole.AFC",18
+"EDTR1B","Cappelletti Turco",6,142,"M","T.Parole.AFC",12
+"ALVA1B","Cappelletti Turco",6,143,"M","T.Parole.AFC",12
+"GIBO2A","Cappelletti Turco",7,165,"M","T.Parole.AFC",10
+"ELGI2A","Cappelletti Turco",7,156,"F","T.Parole.AFC",15
+"DAMA2A","Cappelletti Turco",7,154,"M","T.Parole.AFC",11
+"LASE2A","Cappelletti Turco",7,156,"F","T.Parole.AFC",14
+"GISO2A","Cappelletti Turco",7,149,"M","T.Parole.AFC",12
+"DATO2A","Cappelletti Turco",7,155,"M","T.Parole.AFC",10
+"VIAL1A","Cappelletti Turco",6,143,"F","T.Parole.AFC",13
+"MACA1A","Cappelletti Turco",6,144,"F","T.Parole.AFC",9
+"GIGA1A","Cappelletti Turco",6,135,"F","T.Parole.AFC",10
+"DIPA1A","Cappelletti Turco",6,137,"F","T.Parole.AFC",14
+"FRPE1A","Cappelletti Turco",6,138,"F","T.Parole.AFC",16
+"EDPE1A","Cappelletti Turco",6,145,"M","T.Parole.AFC",12
+"MAZA1A","Cappelletti Turco",6,140,"F","T.Parole.AFC",12
+"VIRO4A","Giuliari",4,120,"M","T.Parole.AFC",17
+"CHLI4A","Giuliari",4,115,"M","T.Parole.AFC",12
+"ALDA4A","Giuliari",4,118,"M","T.Parole.AFC",12
+"ALMA4A","Giuliari",4,116,"M","T.Parole.AFC",39
+"KEPE4A","Giuliari",4,123,"F","T.Parole.AFC",13
+"TOPI4A","Giuliari",4,116,"M","T.Parole.AFC",12
+"SOFI4A","Giuliari",4,116,"F","T.Parole.AFC",17
+"ALGA4A","Giuliari",4,121,"M","T.Parole.AFC",15
+"GISA4A","Giuliari",4,114,"F","T.Parole.AFC",10
+"LUFI4A","Giuliari",4,118,"M","T.Parole.AFC",11
+"SHLI4A","Giuliari",4,115,"M","T.Parole.AFC",15
+"MEPL4A","Giuliari",4,120,"F","T.Parole.AFC",16
+"ASCA4A","Giuliari",4,120,"F","T.Parole.AFC",11
+"YODH4A","Giuliari",4,110,"M","T.Parole.AFC",14
+"JROM5B","Giuliari",5,126,"M","T.Parole.AFC",11
+"ASTA5B","Giuliari",5,127,"F","T.Parole.AFC",10
+"AIDI5B","Giuliari",5,125,"F","T.Parole.AFC",14
+"KEBO5B","Giuliari",5,129,"M","T.Parole.AFC",10
+"IVIN5B","Giuliari",5,124,"M","T.Parole.AFC",24
+"JOBR5B","Giuliari",5,134,"M","T.Parole.AFC",17
+"ZEMA5B","Giuliari",5,131,"M","T.Parole.AFC",13
+"GIGA5B","Giuliari",5,142,"F","T.Parole.AFC",14
+"DIBU5B","Giuliari",5,126,"M","T.Parole.AFC",21
+"ALPE1A","Meneghetti",6,147,"M","T.Parole.AFC",14
+"AMLL1A","Meneghetti",6,143,"F","T.Parole.AFC",14
+"ALPO1A","Meneghetti",6,139,"F","T.Parole.AFC",11
+"YAJA1A","Meneghetti",6,144,"M","T.Parole.AFC",17
+"ILST1A","Meneghetti",6,154,"M","T.Parole.AFC",15
+"FRMA1A_M","Meneghetti",6,145,"M","T.Parole.AFC",18
+"GIRA1A2","Meneghetti",6,137,"F","T.Parole.AFC",10
+"YAAB1A","Meneghetti",6,141,"F","T.Parole.AFC",11
+"BAAB1A","Meneghetti",6,142,"F","T.Parole.AFC",18
+"RIGH1A","Meneghetti",6,142,"M","T.Parole.AFC",10
+"SASE1A","Meneghetti",6,142,"F","T.Parole.AFC",16
+"FIBI1A","Meneghetti",6,146,"M","T.Parole.AFC",11
+"GIRA1A1","Meneghetti",6,146,"F","T.Parole.AFC",9
+"AVPA1A","Meneghetti",6,149,"F","T.Parole.AFC",11
+"ENBO1B","Cappelletti Turco",6,145,"M","T.Parole.AFC",12
+"LODO1B","Cappelletti Turco",6,137,"M","T.Parole.AFC",10
+"GILE1B","Cappelletti Turco",6,141,"M","T.Parole.AFC",15
+"MARMA1B","Cappelletti Turco",6,139,"F","T.Parole.AFC",10
+"GIMA1B","Cappelletti Turco",6,141,"F","T.Parole.AFC",11
+"GINO1B","Cappelletti Turco",6,141,"F","T.Parole.AFC",12
+"PITO1B","Cappelletti Turco",6,140,"M","T.Parole.AFC",10
+"GIZA1B","Cappelletti Turco",6,145,"F","T.Parole.AFC",12
+"VI+A14CA2A","Cappelletti Turco",7,150,"F","T.Parole.AFC",11
+"CACO2A","Cappelletti Turco",7,153,"F","T.Parole.AFC",10
+"CAMA2A","Cappelletti Turco",7,150,"F","T.Parole.AFC",9
+"ALMA2A","Cappelletti Turco",7,151,"F","T.Parole.AFC",10
+"ALRI2A","Cappelletti Turco",7,148,"F","T.Parole.AFC",9
+"LETA2A","Cappelletti Turco",7,151,"F","T.Parole.AFC",11
+"SAZA2A","Cappelletti Turco",7,156,"F","T.Parole.AFC",9
+"SAAL1A","Cappelletti Turco",6,136,"F","T.Parole.AFC",10
+"ALCR1A","Cappelletti Turco",6,142,"F","T.Parole.AFC",14
+"GIFE1A","Cappelletti Turco",6,144,"M","T.Parole.AFC",10
+"GIGR1A","Cappelletti Turco",6,137,"M","T.Parole.AFC",17
+"FIPE1A","Cappelletti Turco",6,137,"M","T.Parole.AFC",10
+"EMPR1A","Cappelletti Turco",6,137,"F","T.Parole.AFC",8
+"LOPA3A","Meneghetti",8,166,"M","T.Parole.AFC",12
+"DEHU3A","Meneghetti",8,164,"M","T.Parole.AFC",7
+"RICU3A","Meneghetti",8,165,"M","T.Parole.AFC",9
+"FADI3A","Meneghetti",8,161,"F","T.Parole.AFC",9
+"DAHY3A","Meneghetti",8,172,"F","T.Parole.AFC",12
+"NOCO3A","Meneghetti",8,170,"F","T.Parole.AFC",13
+"SOBR3A","Meneghetti",8,163,"F","T.Parole.AFC",18
+"ANAG3A","Meneghetti",8,170,"F","T.Parole.AFC",8
+"NEOK3A","Meneghetti",8,171,"F","T.Parole.AFC",15
+"CHFA3A","Meneghetti",8,165,"F","T.Parole.AFC",14
+"TOME3A","Meneghetti",8,172,"M","T.Parole.AFC",15
+"VEST3A","Meneghetti",8,173,"M","T.Parole.AFC",11
+"OLPI3A","Meneghetti",8,165,"F","T.Parole.AFC",18
+"LITA3A","Meneghetti",8,183,"F","T.Parole.AFC",10
+"SEVR3A","Meneghetti",8,171,"F","T.Parole.AFC",15
+"RINA3A","Giuliari",3,114,"M","T.Parole.AFC",17
+"GAGU3A","Giuliari",3,114,"M","T.Parole.AFC",23
+"FRCO3A","Giuliari",3,120,"M","T.Parole.AFC",31
+"AUCO3A","Giuliari",3,112,"F","T.Parole.AFC",18
+"MAKA3A","Giuliari",3,109,"F","T.Parole.AFC",21
+"ENCE3A","Giuliari",3,114,"M","T.Parole.AFC",17
+"AUBA3A","Giuliari",3,114,"F","T.Parole.AFC",19
+"ALPI3A","Giuliari",3,112,"M","T.Parole.AFC",13
+"CHSA3A","Giuliari",3,107,"F","T.Parole.AFC",18
+"MAHA3A","Giuliari",3,114,NA,"T.Parole.AFC",22
+"ADAL3A","Giuliari",3,114,NA,"T.Parole.AFC",10
+"NIBE3A","Giuliari",3,114,NA,"T.Parole.AFC",10
+"AUAR2C","Meneghetti",7,159,"F","T.Parole.AFC",8
+"CARO2C","Meneghetti",7,168,"M","T.Parole.AFC",17
+"ELEP2C","Meneghetti",7,154,"F","T.Parole.AFC",11
+"GIBI2C","Meneghetti",7,152,"F","T.Parole.AFC",10
+"VIRA2C","Meneghetti",7,153,"M","T.Parole.AFC",10
+"IRMA2C","Meneghetti",7,170,"M","T.Parole.AFC",12
+"ABND2C","Meneghetti",7,164,"M","T.Parole.AFC",105
+"DAEL2C","Meneghetti",7,154,"M","T.Parole.AFC",15
+"ALGA2C","Meneghetti",7,173,"F","T.Parole.AFC",14
+"MOMA2C","Meneghetti",7,150,"M","T.Parole.AFC",10
+"MASE2C","Meneghetti",7,161,"M","T.Parole.AFC",10
+"ACDO2C","Meneghetti",7,154,"M","T.Parole.AFC",13
+"GRMI2C","Meneghetti",7,157,"M","T.Parole.AFC",10
+"NIGH2C","Meneghetti",7,161,"M","T.Parole.AFC",9
+"BAGI1D","San Martino",6,139,"M","T.Parole.AFC",16
+"BAVA1D","San Martino",6,139,"F","T.Parole.AFC",12
+"BEDA1D","San Martino",6,141,"M","T.Parole.AFC",8
+"BRBE1D","San Martino",6,136,"F","T.Parole.AFC",10
+"CANI1D","San Martino",6,138,"M","T.Parole.AFC",11
+"CECR1D","San Martino",6,136,"M","T.Parole.AFC",8
+"CEFR1D","San Martino",6,141,"F","T.Parole.AFC",11
+"CETH1D","San Martino",6,139,"M","T.Parole.AFC",12
+"CUFE1D","San Martino",6,139,"F","T.Parole.AFC",9
+"ESNA1D","San Martino",6,143,"M","T.Parole.AFC",19
+"FUSA1D","San Martino",6,139,"F","T.Parole.AFC",12
+"GAGI1D","San Martino",6,147,"F","T.Parole.AFC",12
+"GENI1D","San Martino",6,148,"M","T.Parole.AFC",15
+"GUGI1D","San Martino",6,145,"F","T.Parole.AFC",9
+"HELE1D","San Martino",6,147,"M","T.Parole.AFC",8
+"MILU1D","San Martino",6,144,"M","T.Parole.AFC",9
+"NAEM1D","San Martino",6,136,"F","T.Parole.AFC",10
+"PAMA1D","San Martino",6,142,"F","T.Parole.AFC",10
+"TESA1D","San Martino",6,147,"F","T.Parole.AFC",12
+"ZADA1D","San Martino",6,143,"M","T.Parole.AFC",11
+"NTST1D","San Martino",6,138,"M","T.Parole.AFC",43
+"BOFR1A","San Martino",6,143,"M","T.Parole.CBF",12
+"BRAN1A","San Martino",6,141,"M","T.Parole.CBF",23
+"CAFE1A","San Martino",6,139,"M","T.Parole.CBF",20
+"CEDE1A","San Martino",6,145,"F","T.Parole.CBF",11
+"CODI1A","San Martino",6,142,"M","T.Parole.CBF",12
+"COGI1A","San Martino",6,143,"F","T.Parole.CBF",19
+"FANO1A","San Martino",6,138,"F","T.Parole.CBF",13
+"FRMA1A_SM","San Martino",6,141,"M","T.Parole.CBF",15
+"GACR1A","San Martino",6,147,"M","T.Parole.CBF",17
+"JUIV1A","San Martino",6,140,"M","T.Parole.CBF",13
+"MIRI1A","San Martino",6,144,"M","T.Parole.CBF",14
+"MIGI1A","San Martino",6,144,"F","T.Parole.CBF",11
+"MILE1A","San Martino",6,143,"M","T.Parole.CBF",13
+"MOSO1A","San Martino",6,144,"F","T.Parole.CBF",18
+"PABE1A","San Martino",6,147,"F","T.Parole.CBF",27
+"PIAL1A","San Martino",6,143,"M","T.Parole.CBF",14
+"SAGL1A","San Martino",6,146,"F","T.Parole.CBF",17
+"STCE1A","San Martino",6,143,"M","T.Parole.CBF",10
+"TARI1A","San Martino",6,138,"M","T.Parole.CBF",28
+"TOSO1A","San Martino",6,140,"F","T.Parole.CBF",38
+"VIAG1A","San Martino",6,147,"F","T.Parole.CBF",15
+"ANAN1C","San Martino",6,144,"F","T.Parole.CBF",19
+"ANFI1C","San Martino",6,138,"M","T.Parole.CBF",11
+"BEGI1C","San Martino",6,147,"M","T.Parole.CBF",15
+"BREL1C","San Martino",6,140,"F","T.Parole.CBF",15
+"CASA1C","San Martino",6,139,"M","T.Parole.CBF",21
+"DUMA1C","San Martino",6,145,"M","T.Parole.CBF",21
+"ELOM1C","San Martino",6,151,"F","T.Parole.CBF",16
+"FEEM1C","San Martino",6,146,"F","T.Parole.CBF",13
+"GUCA1C","San Martino",6,145,"F","T.Parole.CBF",11
+"LINI1C","San Martino",6,137,"M","T.Parole.CBF",14
+"LOSA1C","San Martino",6,147,"F","T.Parole.CBF",12
+"MATO1C","San Martino",6,139,"M","T.Parole.CBF",14
+"PAGU1C","San Martino",6,142,"M","T.Parole.CBF",18
+"PEGI1C","San Martino",6,142,"F","T.Parole.CBF",14
+"PELE1C","San Martino",6,143,"M","T.Parole.CBF",18
+"POAU1C","San Martino",6,142,"F","T.Parole.CBF",13
+"SIGI1C","San Martino",6,141,"F","T.Parole.CBF",13
+"SOYA1C","San Martino",6,144,"M","T.Parole.CBF",26
+"STSO1C","San Martino",6,146,"F","T.Parole.CBF",12
+"BRFR1E","San Martino",6,141,"M","T.Parole.CBF",19
+"BRNI1E","San Martino",6,139,"M","T.Parole.CBF",21
+"BUBE1E","San Martino",6,146,"F","T.Parole.CBF",13
+"CAEM1E","San Martino",6,137,"F","T.Parole.CBF",12
+"FRAN1E","San Martino",6,136,"F","T.Parole.CBF",25
+"MANI1E","San Martino",6,154,"M","T.Parole.CBF",13
+"MODA1E","San Martino",6,143,"M","T.Parole.CBF",14
+"OMBA1E","San Martino",6,148,"M","T.Parole.CBF",19
+"RUMA1E","San Martino",6,141,"F","T.Parole.CBF",17
+"SASA1E","San Martino",6,145,"F","T.Parole.CBF",12
+"SCGIA1E","San Martino",6,142,"M","T.Parole.CBF",22
+"STFI1E","San Martino",6,146,"M","T.Parole.CBF",15
+"TOSO1E","San Martino",6,140,"F","T.Parole.CBF",11
+"VIAN1E","San Martino",6,142,"F","T.Parole.CBF",28
+"ZOGA1E","San Martino",6,138,"F","T.Parole.CBF",19
+"ANGI1F","San Martino",6,137,"F","T.Parole.CBF",19
+"BADE1F","San Martino",6,138,"F","T.Parole.CBF",12
+"CAED1F","San Martino",6,138,"M","T.Parole.CBF",15
+"DEMA1F","San Martino",6,147,"M","T.Parole.CBF",21
+"DEPI1F","San Martino",6,147,"M","T.Parole.CBF",13
+"DEAL1F","San Martino",6,143,"M","T.Parole.CBF",13
+"DOMA1F","San Martino",6,152,"F","T.Parole.CBF",20
+"GEIS1F","San Martino",6,136,"F","T.Parole.CBF",13
+"GIVI1F","San Martino",6,138,"M","T.Parole.CBF",15
+"GOVA1F","San Martino",6,139,"F","T.Parole.CBF",10
+"GURI1F","San Martino",6,140,"M","T.Parole.CBF",10
+"LAFI1F","San Martino",6,142,"M","T.Parole.CBF",12
+"MAER1F","San Martino",6,136,"F","T.Parole.CBF",13
+"MEVI1F","San Martino",6,145,"F","T.Parole.CBF",15
+"PAAN1F","San Martino",6,142,"M","T.Parole.CBF",14
+"PEAL1F","San Martino",6,140,"M","T.Parole.CBF",11
+"PIAD1F","San Martino",6,137,"F","T.Parole.CBF",11
+"PIBR1F","San Martino",6,137,"F","T.Parole.CBF",13
+"PIGA1F","San Martino",6,136,"M","T.Parole.CBF",12
+"TEPI1F","San Martino",6,138,"M","T.Parole.CBF",14
+"VEAL1F","San Martino",6,138,"F","T.Parole.CBF",10
+"ZAAD1F","San Martino",6,146,"F","T.Parole.CBF",16
+"BAAL1B","San Martino",6,139,"M","T.Parole.CBF",18
+"BAVI1B","San Martino",6,136,"F","T.Parole.CBF",14
+"BADA1B","San Martino",6,146,"M","T.Parole.CBF",19
+"BRGI1B","San Martino",6,145,"M","T.Parole.CBF",12
+"COAL1B","San Martino",6,137,"F","T.Parole.CBF",12
+"DEST1B","San Martino",6,141,"M","T.Parole.CBF",15
+"FIGI1B","San Martino",6,147,"F","T.Parole.CBF",11
+"GRGL1B","San Martino",6,150,"F","T.Parole.CBF",12
+"GURI1B","San Martino",6,137,"M","T.Parole.CBF",18
+"JUCR1B","San Martino",6,147,"M","T.Parole.CBF",17
+"KEKA1B","San Martino",6,164,"F","T.Parole.CBF",27
+"PEMA1B","San Martino",6,136,"M","T.Parole.CBF",25
+"PEAN1B","San Martino",6,146,"F","T.Parole.CBF",10
+"PEJA1B","San Martino",6,142,"M","T.Parole.CBF",10
+"PILO1B","San Martino",6,141,"M","T.Parole.CBF",13
+"SCAN1B","San Martino",6,144,"F","T.Parole.CBF",14
+"STSO1B","San Martino",6,141,"F","T.Parole.CBF",10
+"TOSI1B","San Martino",6,144,"M","T.Parole.CBF",13
+"ZAMA1B","San Martino",6,146,"M","T.Parole.CBF",19
+"ZASA1B","San Martino",6,146,"F","T.Parole.CBF",10
+"ZUIR1B","San Martino",6,147,"F","T.Parole.CBF",11
+"CHAN1B","Cappelletti Turco",6,144,"F","T.Parole.CBF",14
+"LUCE1B","Cappelletti Turco",6,143,"M","T.Parole.CBF",14
+"DAGI1B","Cappelletti Turco",6,134,"M","T.Parole.CBF",22
+"ASMA1B","Cappelletti Turco",6,142,"F","T.Parole.CBF",14
+"MATMA1B","Cappelletti Turco",6,138,"M","T.Parole.CBF",11
+"VIPR1B","Cappelletti Turco",6,136,"F","T.Parole.CBF",17
+"EDTR1B","Cappelletti Turco",6,142,"M","T.Parole.CBF",23
+"ALVA1B","Cappelletti Turco",6,143,"M","T.Parole.CBF",18
+"GIBO2A","Cappelletti Turco",7,165,"M","T.Parole.CBF",14
+"ELGI2A","Cappelletti Turco",7,156,"F","T.Parole.CBF",17
+"DAMA2A","Cappelletti Turco",7,154,"M","T.Parole.CBF",13
+"LASE2A","Cappelletti Turco",7,156,"F","T.Parole.CBF",39
+"GISO2A","Cappelletti Turco",7,149,"M","T.Parole.CBF",12
+"DATO2A","Cappelletti Turco",7,155,"M","T.Parole.CBF",17
+"VIAL1A","Cappelletti Turco",6,143,"F","T.Parole.CBF",15
+"MACA1A","Cappelletti Turco",6,144,"F","T.Parole.CBF",10
+"GIGA1A","Cappelletti Turco",6,135,"F","T.Parole.CBF",13
+"DIPA1A","Cappelletti Turco",6,137,"F","T.Parole.CBF",17
+"FRPE1A","Cappelletti Turco",6,138,"F","T.Parole.CBF",18
+"EDPE1A","Cappelletti Turco",6,145,"M","T.Parole.CBF",12
+"MAZA1A","Cappelletti Turco",6,140,"F","T.Parole.CBF",18
+"VIRO4A","Giuliari",4,120,"M","T.Parole.CBF",28
+"CHLI4A","Giuliari",4,115,"M","T.Parole.CBF",20
+"ALDA4A","Giuliari",4,118,"M","T.Parole.CBF",19
+"ALMA4A","Giuliari",4,116,"M","T.Parole.CBF",74
+"KEPE4A","Giuliari",4,123,"F","T.Parole.CBF",20
+"TOPI4A","Giuliari",4,116,"M","T.Parole.CBF",18
+"SOFI4A","Giuliari",4,116,"F","T.Parole.CBF",24
+"ALGA4A","Giuliari",4,121,"M","T.Parole.CBF",24
+"GISA4A","Giuliari",4,114,"F","T.Parole.CBF",18
+"LUFI4A","Giuliari",4,118,"M","T.Parole.CBF",25
+"SHLI4A","Giuliari",4,115,"M","T.Parole.CBF",25
+"MEPL4A","Giuliari",4,120,"F","T.Parole.CBF",18
+"ASCA4A","Giuliari",4,120,"F","T.Parole.CBF",15
+"YODH4A","Giuliari",4,110,"M","T.Parole.CBF",21
+"JROM5B","Giuliari",5,126,"M","T.Parole.CBF",14
+"ASTA5B","Giuliari",5,127,"F","T.Parole.CBF",18
+"AIDI5B","Giuliari",5,125,"F","T.Parole.CBF",15
+"KEBO5B","Giuliari",5,129,"M","T.Parole.CBF",16
+"IVIN5B","Giuliari",5,124,"M","T.Parole.CBF",20
+"JOBR5B","Giuliari",5,134,"M","T.Parole.CBF",18
+"ZEMA5B","Giuliari",5,131,"M","T.Parole.CBF",20
+"GIGA5B","Giuliari",5,142,"F","T.Parole.CBF",15
+"DIBU5B","Giuliari",5,126,"M","T.Parole.CBF",21
+"ALPE1A","Meneghetti",6,147,"M","T.Parole.CBF",14
+"AMLL1A","Meneghetti",6,143,"F","T.Parole.CBF",19
+"ALPO1A","Meneghetti",6,139,"F","T.Parole.CBF",13
+"YAJA1A","Meneghetti",6,144,"M","T.Parole.CBF",26
+"ILST1A","Meneghetti",6,154,"M","T.Parole.CBF",20
+"FRMA1A_M","Meneghetti",6,145,"M","T.Parole.CBF",35
+"GIRA1A2","Meneghetti",6,137,"F","T.Parole.CBF",11
+"YAAB1A","Meneghetti",6,141,"F","T.Parole.CBF",15
+"BAAB1A","Meneghetti",6,142,"F","T.Parole.CBF",19
+"RIGH1A","Meneghetti",6,142,"M","T.Parole.CBF",13
+"SASE1A","Meneghetti",6,142,"F","T.Parole.CBF",21
+"FIBI1A","Meneghetti",6,146,"M","T.Parole.CBF",16
+"GIRA1A1","Meneghetti",6,146,"F","T.Parole.CBF",13
+"AVPA1A","Meneghetti",6,149,"F","T.Parole.CBF",12
+"ENBO1B","Cappelletti Turco",6,145,"M","T.Parole.CBF",28
+"LODO1B","Cappelletti Turco",6,137,"M","T.Parole.CBF",15
+"GILE1B","Cappelletti Turco",6,141,"M","T.Parole.CBF",22
+"MARMA1B","Cappelletti Turco",6,139,"F","T.Parole.CBF",12
+"GIMA1B","Cappelletti Turco",6,141,"F","T.Parole.CBF",15
+"GINO1B","Cappelletti Turco",6,141,"F","T.Parole.CBF",18
+"PITO1B","Cappelletti Turco",6,140,"M","T.Parole.CBF",17
+"GIZA1B","Cappelletti Turco",6,145,"F","T.Parole.CBF",17
+"VI+A14CA2A","Cappelletti Turco",7,150,"F","T.Parole.CBF",18
+"CACO2A","Cappelletti Turco",7,153,"F","T.Parole.CBF",15
+"CAMA2A","Cappelletti Turco",7,150,"F","T.Parole.CBF",13
+"ALMA2A","Cappelletti Turco",7,151,"F","T.Parole.CBF",14
+"ALRI2A","Cappelletti Turco",7,148,"F","T.Parole.CBF",13
+"LETA2A","Cappelletti Turco",7,151,"F","T.Parole.CBF",13
+"SAZA2A","Cappelletti Turco",7,156,"F","T.Parole.CBF",12
+"SAAL1A","Cappelletti Turco",6,136,"F","T.Parole.CBF",11
+"ALCR1A","Cappelletti Turco",6,142,"F","T.Parole.CBF",20
+"GIFE1A","Cappelletti Turco",6,144,"M","T.Parole.CBF",13
+"GIGR1A","Cappelletti Turco",6,137,"M","T.Parole.CBF",14
+"FIPE1A","Cappelletti Turco",6,137,"M","T.Parole.CBF",12
+"EMPR1A","Cappelletti Turco",6,137,"F","T.Parole.CBF",11
+"LOPA3A","Meneghetti",8,166,"M","T.Parole.CBF",18
+"DEHU3A","Meneghetti",8,164,"M","T.Parole.CBF",9
+"RICU3A","Meneghetti",8,165,"M","T.Parole.CBF",11
+"FADI3A","Meneghetti",8,161,"F","T.Parole.CBF",11
+"DAHY3A","Meneghetti",8,172,"F","T.Parole.CBF",14
+"NOCO3A","Meneghetti",8,170,"F","T.Parole.CBF",16
+"SOBR3A","Meneghetti",8,163,"F","T.Parole.CBF",22
+"ANAG3A","Meneghetti",8,170,"F","T.Parole.CBF",10
+"NEOK3A","Meneghetti",8,171,"F","T.Parole.CBF",15
+"CHFA3A","Meneghetti",8,165,"F","T.Parole.CBF",14
+"TOME3A","Meneghetti",8,172,"M","T.Parole.CBF",11
+"VEST3A","Meneghetti",8,173,"M","T.Parole.CBF",12
+"OLPI3A","Meneghetti",8,165,"F","T.Parole.CBF",20
+"LITA3A","Meneghetti",8,183,"F","T.Parole.CBF",12
+"SEVR3A","Meneghetti",8,171,"F","T.Parole.CBF",23
+"RINA3A","Giuliari",3,114,"M","T.Parole.CBF",32
+"GAGU3A","Giuliari",3,114,"M","T.Parole.CBF",34
+"FRCO3A","Giuliari",3,120,"M","T.Parole.CBF",66
+"AUCO3A","Giuliari",3,112,"F","T.Parole.CBF",38
+"MAKA3A","Giuliari",3,109,"F","T.Parole.CBF",30
+"ENCE3A","Giuliari",3,114,"M","T.Parole.CBF",44
+"AUBA3A","Giuliari",3,114,"F","T.Parole.CBF",31
+"ALPI3A","Giuliari",3,112,"M","T.Parole.CBF",20
+"CHSA3A","Giuliari",3,107,"F","T.Parole.CBF",17
+"MAHA3A","Giuliari",3,114,NA,"T.Parole.CBF",35
+"ADAL3A","Giuliari",3,114,NA,"T.Parole.CBF",22
+"NIBE3A","Giuliari",3,114,NA,"T.Parole.CBF",61
+"AUAR2C","Meneghetti",7,159,"F","T.Parole.CBF",9
+"CARO2C","Meneghetti",7,168,"M","T.Parole.CBF",27
+"ELEP2C","Meneghetti",7,154,"F","T.Parole.CBF",11
+"GIBI2C","Meneghetti",7,152,"F","T.Parole.CBF",13
+"VIRA2C","Meneghetti",7,153,"M","T.Parole.CBF",17
+"IRMA2C","Meneghetti",7,170,"M","T.Parole.CBF",14
+"ABND2C","Meneghetti",7,164,"M","T.Parole.CBF",127
+"DAEL2C","Meneghetti",7,154,"M","T.Parole.CBF",17
+"ALGA2C","Meneghetti",7,173,"F","T.Parole.CBF",17
+"MOMA2C","Meneghetti",7,150,"M","T.Parole.CBF",12
+"MASE2C","Meneghetti",7,161,"M","T.Parole.CBF",12
+"ACDO2C","Meneghetti",7,154,"M","T.Parole.CBF",16
+"GRMI2C","Meneghetti",7,157,"M","T.Parole.CBF",12
+"NIGH2C","Meneghetti",7,161,"M","T.Parole.CBF",11
+"BAGI1D","San Martino",6,139,"M","T.Parole.CBF",15
+"BAVA1D","San Martino",6,139,"F","T.Parole.CBF",19
+"BEDA1D","San Martino",6,141,"M","T.Parole.CBF",13
+"BRBE1D","San Martino",6,136,"F","T.Parole.CBF",14
+"CANI1D","San Martino",6,138,"M","T.Parole.CBF",17
+"CECR1D","San Martino",6,136,"M","T.Parole.CBF",11
+"CEFR1D","San Martino",6,141,"F","T.Parole.CBF",12
+"CETH1D","San Martino",6,139,"M","T.Parole.CBF",17
+"CUFE1D","San Martino",6,139,"F","T.Parole.CBF",11
+"ESNA1D","San Martino",6,143,"M","T.Parole.CBF",33
+"FUSA1D","San Martino",6,139,"F","T.Parole.CBF",17
+"GAGI1D","San Martino",6,147,"F","T.Parole.CBF",16
+"GENI1D","San Martino",6,148,"M","T.Parole.CBF",30
+"GUGI1D","San Martino",6,145,"F","T.Parole.CBF",13
+"HELE1D","San Martino",6,147,"M","T.Parole.CBF",15
+"MILU1D","San Martino",6,144,"M","T.Parole.CBF",14
+"NAEM1D","San Martino",6,136,"F","T.Parole.CBF",14
+"PAMA1D","San Martino",6,142,"F","T.Parole.CBF",14
+"TESA1D","San Martino",6,147,"F","T.Parole.CBF",13
+"ZADA1D","San Martino",6,143,"M","T.Parole.CBF",11
+"NTST1D","San Martino",6,138,"M","T.Parole.CBF",54
+"BOFR1A","San Martino",6,143,"M","T.Nonparole.C",11
+"BRAN1A","San Martino",6,141,"M","T.Nonparole.C",16
+"CAFE1A","San Martino",6,139,"M","T.Nonparole.C",17
+"CEDE1A","San Martino",6,145,"F","T.Nonparole.C",18
+"CODI1A","San Martino",6,142,"M","T.Nonparole.C",27
+"COGI1A","San Martino",6,143,"F","T.Nonparole.C",23
+"FANO1A","San Martino",6,138,"F","T.Nonparole.C",14
+"FRMA1A_SM","San Martino",6,141,"M","T.Nonparole.C",17
+"GACR1A","San Martino",6,147,"M","T.Nonparole.C",22
+"JUIV1A","San Martino",6,140,"M","T.Nonparole.C",14
+"MIRI1A","San Martino",6,144,"M","T.Nonparole.C",17
+"MIGI1A","San Martino",6,144,"F","T.Nonparole.C",13
+"MILE1A","San Martino",6,143,"M","T.Nonparole.C",11
+"MOSO1A","San Martino",6,144,"F","T.Nonparole.C",19
+"PABE1A","San Martino",6,147,"F","T.Nonparole.C",26
+"PIAL1A","San Martino",6,143,"M","T.Nonparole.C",14
+"SAGL1A","San Martino",6,146,"F","T.Nonparole.C",24
+"STCE1A","San Martino",6,143,"M","T.Nonparole.C",16
+"TARI1A","San Martino",6,138,"M","T.Nonparole.C",34
+"TOSO1A","San Martino",6,140,"F","T.Nonparole.C",34
+"VIAG1A","San Martino",6,147,"F","T.Nonparole.C",18
+"ANAN1C","San Martino",6,144,"F","T.Nonparole.C",40
+"ANFI1C","San Martino",6,138,"M","T.Nonparole.C",11
+"BEGI1C","San Martino",6,147,"M","T.Nonparole.C",25
+"BREL1C","San Martino",6,140,"F","T.Nonparole.C",19
+"CASA1C","San Martino",6,139,"M","T.Nonparole.C",28
+"DUMA1C","San Martino",6,145,"M","T.Nonparole.C",33
+"ELOM1C","San Martino",6,151,"F","T.Nonparole.C",16
+"FEEM1C","San Martino",6,146,"F","T.Nonparole.C",21
+"GUCA1C","San Martino",6,145,"F","T.Nonparole.C",12
+"LINI1C","San Martino",6,137,"M","T.Nonparole.C",13
+"LOSA1C","San Martino",6,147,"F","T.Nonparole.C",13
+"MATO1C","San Martino",6,139,"M","T.Nonparole.C",13
+"PAGU1C","San Martino",6,142,"M","T.Nonparole.C",20
+"PEGI1C","San Martino",6,142,"F","T.Nonparole.C",20
+"PELE1C","San Martino",6,143,"M","T.Nonparole.C",25
+"POAU1C","San Martino",6,142,"F","T.Nonparole.C",16
+"SIGI1C","San Martino",6,141,"F","T.Nonparole.C",14
+"SOYA1C","San Martino",6,144,"M","T.Nonparole.C",18
+"STSO1C","San Martino",6,146,"F","T.Nonparole.C",13
+"BRFR1E","San Martino",6,141,"M","T.Nonparole.C",25
+"BRNI1E","San Martino",6,139,"M","T.Nonparole.C",22
+"BUBE1E","San Martino",6,146,"F","T.Nonparole.C",19
+"CAEM1E","San Martino",6,137,"F","T.Nonparole.C",12
+"FRAN1E","San Martino",6,136,"F","T.Nonparole.C",32
+"MANI1E","San Martino",6,154,"M","T.Nonparole.C",17
+"MODA1E","San Martino",6,143,"M","T.Nonparole.C",16
+"OMBA1E","San Martino",6,148,"M","T.Nonparole.C",22
+"RUMA1E","San Martino",6,141,"F","T.Nonparole.C",21
+"SASA1E","San Martino",6,145,"F","T.Nonparole.C",14
+"SCGIA1E","San Martino",6,142,"M","T.Nonparole.C",21
+"STFI1E","San Martino",6,146,"M","T.Nonparole.C",19
+"TOSO1E","San Martino",6,140,"F","T.Nonparole.C",16
+"VIAN1E","San Martino",6,142,"F","T.Nonparole.C",31
+"ZOGA1E","San Martino",6,138,"F","T.Nonparole.C",25
+"ANGI1F","San Martino",6,137,"F","T.Nonparole.C",25
+"BADE1F","San Martino",6,138,"F","T.Nonparole.C",17
+"CAED1F","San Martino",6,138,"M","T.Nonparole.C",18
+"DEMA1F","San Martino",6,147,"M","T.Nonparole.C",25
+"DEPI1F","San Martino",6,147,"M","T.Nonparole.C",16
+"DEAL1F","San Martino",6,143,"M","T.Nonparole.C",13
+"DOMA1F","San Martino",6,152,"F","T.Nonparole.C",25
+"GEIS1F","San Martino",6,136,"F","T.Nonparole.C",14
+"GIVI1F","San Martino",6,138,"M","T.Nonparole.C",20
+"GOVA1F","San Martino",6,139,"F","T.Nonparole.C",12
+"GURI1F","San Martino",6,140,"M","T.Nonparole.C",9
+"LAFI1F","San Martino",6,142,"M","T.Nonparole.C",12
+"MAER1F","San Martino",6,136,"F","T.Nonparole.C",13
+"MEVI1F","San Martino",6,145,"F","T.Nonparole.C",16
+"PAAN1F","San Martino",6,142,"M","T.Nonparole.C",17
+"PEAL1F","San Martino",6,140,"M","T.Nonparole.C",12
+"PIAD1F","San Martino",6,137,"F","T.Nonparole.C",13
+"PIBR1F","San Martino",6,137,"F","T.Nonparole.C",18
+"PIGA1F","San Martino",6,136,"M","T.Nonparole.C",13
+"TEPI1F","San Martino",6,138,"M","T.Nonparole.C",17
+"VEAL1F","San Martino",6,138,"F","T.Nonparole.C",11
+"ZAAD1F","San Martino",6,146,"F","T.Nonparole.C",21
+"BAAL1B","San Martino",6,139,"M","T.Nonparole.C",21
+"BAVI1B","San Martino",6,136,"F","T.Nonparole.C",16
+"BADA1B","San Martino",6,146,"M","T.Nonparole.C",22
+"BRGI1B","San Martino",6,145,"M","T.Nonparole.C",14
+"COAL1B","San Martino",6,137,"F","T.Nonparole.C",11
+"DEST1B","San Martino",6,141,"M","T.Nonparole.C",17
+"FIGI1B","San Martino",6,147,"F","T.Nonparole.C",12
+"GRGL1B","San Martino",6,150,"F","T.Nonparole.C",15
+"GURI1B","San Martino",6,137,"M","T.Nonparole.C",21
+"JUCR1B","San Martino",6,147,"M","T.Nonparole.C",16
+"KEKA1B","San Martino",6,164,"F","T.Nonparole.C",24
+"PEMA1B","San Martino",6,136,"M","T.Nonparole.C",38
+"PEAN1B","San Martino",6,146,"F","T.Nonparole.C",15
+"PEJA1B","San Martino",6,142,"M","T.Nonparole.C",13
+"PILO1B","San Martino",6,141,"M","T.Nonparole.C",16
+"SCAN1B","San Martino",6,144,"F","T.Nonparole.C",19
+"STSO1B","San Martino",6,141,"F","T.Nonparole.C",16
+"TOSI1B","San Martino",6,144,"M","T.Nonparole.C",17
+"ZAMA1B","San Martino",6,146,"M","T.Nonparole.C",23
+"ZASA1B","San Martino",6,146,"F","T.Nonparole.C",11
+"ZUIR1B","San Martino",6,147,"F","T.Nonparole.C",14
+"CHAN1B","Cappelletti Turco",6,144,"F","T.Nonparole.C",16
+"LUCE1B","Cappelletti Turco",6,143,"M","T.Nonparole.C",14
+"DAGI1B","Cappelletti Turco",6,134,"M","T.Nonparole.C",28
+"ASMA1B","Cappelletti Turco",6,142,"F","T.Nonparole.C",14
+"MATMA1B","Cappelletti Turco",6,138,"M","T.Nonparole.C",13
+"VIPR1B","Cappelletti Turco",6,136,"F","T.Nonparole.C",18
+"EDTR1B","Cappelletti Turco",6,142,"M","T.Nonparole.C",30
+"ALVA1B","Cappelletti Turco",6,143,"M","T.Nonparole.C",19
+"GIBO2A","Cappelletti Turco",7,165,"M","T.Nonparole.C",16
+"ELGI2A","Cappelletti Turco",7,156,"F","T.Nonparole.C",21
+"DAMA2A","Cappelletti Turco",7,154,"M","T.Nonparole.C",14
+"LASE2A","Cappelletti Turco",7,156,"F","T.Nonparole.C",28
+"GISO2A","Cappelletti Turco",7,149,"M","T.Nonparole.C",13
+"DATO2A","Cappelletti Turco",7,155,"M","T.Nonparole.C",16
+"VIAL1A","Cappelletti Turco",6,143,"F","T.Nonparole.C",17
+"MACA1A","Cappelletti Turco",6,144,"F","T.Nonparole.C",13
+"GIGA1A","Cappelletti Turco",6,135,"F","T.Nonparole.C",15
+"DIPA1A","Cappelletti Turco",6,137,"F","T.Nonparole.C",20
+"FRPE1A","Cappelletti Turco",6,138,"F","T.Nonparole.C",20
+"EDPE1A","Cappelletti Turco",6,145,"M","T.Nonparole.C",20
+"MAZA1A","Cappelletti Turco",6,140,"F","T.Nonparole.C",28
+"VIRO4A","Giuliari",4,120,"M","T.Nonparole.C",32
+"CHLI4A","Giuliari",4,115,"M","T.Nonparole.C",19
+"ALDA4A","Giuliari",4,118,"M","T.Nonparole.C",20
+"ALMA4A","Giuliari",4,116,"M","T.Nonparole.C",58
+"KEPE4A","Giuliari",4,123,"F","T.Nonparole.C",18
+"TOPI4A","Giuliari",4,116,"M","T.Nonparole.C",18
+"SOFI4A","Giuliari",4,116,"F","T.Nonparole.C",31
+"ALGA4A","Giuliari",4,121,"M","T.Nonparole.C",30
+"GISA4A","Giuliari",4,114,"F","T.Nonparole.C",22
+"LUFI4A","Giuliari",4,118,"M","T.Nonparole.C",22
+"SHLI4A","Giuliari",4,115,"M","T.Nonparole.C",24
+"MEPL4A","Giuliari",4,120,"F","T.Nonparole.C",26
+"ASCA4A","Giuliari",4,120,"F","T.Nonparole.C",14
+"YODH4A","Giuliari",4,110,"M","T.Nonparole.C",23
+"JROM5B","Giuliari",5,126,"M","T.Nonparole.C",18
+"ASTA5B","Giuliari",5,127,"F","T.Nonparole.C",19
+"AIDI5B","Giuliari",5,125,"F","T.Nonparole.C",17
+"KEBO5B","Giuliari",5,129,"M","T.Nonparole.C",19
+"IVIN5B","Giuliari",5,124,"M","T.Nonparole.C",19
+"JOBR5B","Giuliari",5,134,"M","T.Nonparole.C",24
+"ZEMA5B","Giuliari",5,131,"M","T.Nonparole.C",21
+"GIGA5B","Giuliari",5,142,"F","T.Nonparole.C",18
+"DIBU5B","Giuliari",5,126,"M","T.Nonparole.C",22
+"ALPE1A","Meneghetti",6,147,"M","T.Nonparole.C",18
+"AMLL1A","Meneghetti",6,143,"F","T.Nonparole.C",18
+"ALPO1A","Meneghetti",6,139,"F","T.Nonparole.C",14
+"YAJA1A","Meneghetti",6,144,"M","T.Nonparole.C",22
+"ILST1A","Meneghetti",6,154,"M","T.Nonparole.C",22
+"FRMA1A_M","Meneghetti",6,145,"M","T.Nonparole.C",42
+"GIRA1A2","Meneghetti",6,137,"F","T.Nonparole.C",14
+"YAAB1A","Meneghetti",6,141,"F","T.Nonparole.C",17
+"BAAB1A","Meneghetti",6,142,"F","T.Nonparole.C",16
+"RIGH1A","Meneghetti",6,142,"M","T.Nonparole.C",15
+"SASE1A","Meneghetti",6,142,"F","T.Nonparole.C",23
+"FIBI1A","Meneghetti",6,146,"M","T.Nonparole.C",15
+"GIRA1A1","Meneghetti",6,146,"F","T.Nonparole.C",13
+"AVPA1A","Meneghetti",6,149,"F","T.Nonparole.C",13
+"ENBO1B","Cappelletti Turco",6,145,"M","T.Nonparole.C",78
+"LODO1B","Cappelletti Turco",6,137,"M","T.Nonparole.C",23
+"GILE1B","Cappelletti Turco",6,141,"M","T.Nonparole.C",47
+"MARMA1B","Cappelletti Turco",6,139,"F","T.Nonparole.C",26
+"GIMA1B","Cappelletti Turco",6,141,"F","T.Nonparole.C",27
+"GINO1B","Cappelletti Turco",6,141,"F","T.Nonparole.C",32
+"PITO1B","Cappelletti Turco",6,140,"M","T.Nonparole.C",30
+"GIZA1B","Cappelletti Turco",6,145,"F","T.Nonparole.C",36
+"VI+A14CA2A","Cappelletti Turco",7,150,"F","T.Nonparole.C",32
+"CACO2A","Cappelletti Turco",7,153,"F","T.Nonparole.C",33
+"CAMA2A","Cappelletti Turco",7,150,"F","T.Nonparole.C",25
+"ALMA2A","Cappelletti Turco",7,151,"F","T.Nonparole.C",24
+"ALRI2A","Cappelletti Turco",7,148,"F","T.Nonparole.C",28
+"LETA2A","Cappelletti Turco",7,151,"F","T.Nonparole.C",34
+"SAZA2A","Cappelletti Turco",7,156,"F","T.Nonparole.C",27
+"SAAL1A","Cappelletti Turco",6,136,"F","T.Nonparole.C",25
+"ALCR1A","Cappelletti Turco",6,142,"F","T.Nonparole.C",46
+"GIFE1A","Cappelletti Turco",6,144,"M","T.Nonparole.C",26
+"GIGR1A","Cappelletti Turco",6,137,"M","T.Nonparole.C",30
+"FIPE1A","Cappelletti Turco",6,137,"M","T.Nonparole.C",25
+"EMPR1A","Cappelletti Turco",6,137,"F","T.Nonparole.C",22
+"LOPA3A","Meneghetti",8,166,"M","T.Nonparole.C",40
+"DEHU3A","Meneghetti",8,164,"M","T.Nonparole.C",18
+"RICU3A","Meneghetti",8,165,"M","T.Nonparole.C",22
+"FADI3A","Meneghetti",8,161,"F","T.Nonparole.C",18
+"DAHY3A","Meneghetti",8,172,"F","T.Nonparole.C",31
+"NOCO3A","Meneghetti",8,170,"F","T.Nonparole.C",26
+"SOBR3A","Meneghetti",8,163,"F","T.Nonparole.C",55
+"ANAG3A","Meneghetti",8,170,"F","T.Nonparole.C",20
+"NEOK3A","Meneghetti",8,171,"F","T.Nonparole.C",21
+"CHFA3A","Meneghetti",8,165,"F","T.Nonparole.C",22
+"TOME3A","Meneghetti",8,172,"M","T.Nonparole.C",18
+"VEST3A","Meneghetti",8,173,"M","T.Nonparole.C",15
+"OLPI3A","Meneghetti",8,165,"F","T.Nonparole.C",42
+"LITA3A","Meneghetti",8,183,"F","T.Nonparole.C",21
+"SEVR3A","Meneghetti",8,171,"F","T.Nonparole.C",36
+"RINA3A","Giuliari",3,114,"M","T.Nonparole.C",46
+"GAGU3A","Giuliari",3,114,"M","T.Nonparole.C",36
+"FRCO3A","Giuliari",3,120,"M","T.Nonparole.C",87
+"AUCO3A","Giuliari",3,112,"F","T.Nonparole.C",71
+"MAKA3A","Giuliari",3,109,"F","T.Nonparole.C",47
+"ENCE3A","Giuliari",3,114,"M","T.Nonparole.C",67
+"AUBA3A","Giuliari",3,114,"F","T.Nonparole.C",53
+"ALPI3A","Giuliari",3,112,"M","T.Nonparole.C",39
+"CHSA3A","Giuliari",3,107,"F","T.Nonparole.C",29
+"MAHA3A","Giuliari",3,114,NA,"T.Nonparole.C",63
+"ADAL3A","Giuliari",3,114,NA,"T.Nonparole.C",28
+"NIBE3A","Giuliari",3,114,NA,"T.Nonparole.C",27
+"AUAR2C","Meneghetti",7,159,"F","T.Nonparole.C",21
+"CARO2C","Meneghetti",7,168,"M","T.Nonparole.C",42
+"ELEP2C","Meneghetti",7,154,"F","T.Nonparole.C",21
+"GIBI2C","Meneghetti",7,152,"F","T.Nonparole.C",23
+"VIRA2C","Meneghetti",7,153,"M","T.Nonparole.C",24
+"IRMA2C","Meneghetti",7,170,"M","T.Nonparole.C",20
+"DAEL2C","Meneghetti",7,154,"M","T.Nonparole.C",33
+"ALGA2C","Meneghetti",7,173,"F","T.Nonparole.C",36
+"MOMA2C","Meneghetti",7,150,"M","T.Nonparole.C",23
+"MASE2C","Meneghetti",7,161,"M","T.Nonparole.C",22
+"ACDO2C","Meneghetti",7,154,"M","T.Nonparole.C",29
+"GRMI2C","Meneghetti",7,157,"M","T.Nonparole.C",22
+"NIGH2C","Meneghetti",7,161,"M","T.Nonparole.C",22
+"BAGI1D","San Martino",6,139,"M","T.Nonparole.C",21
+"BAVA1D","San Martino",6,139,"F","T.Nonparole.C",19
+"BEDA1D","San Martino",6,141,"M","T.Nonparole.C",14
+"BRBE1D","San Martino",6,136,"F","T.Nonparole.C",18
+"CANI1D","San Martino",6,138,"M","T.Nonparole.C",19
+"CECR1D","San Martino",6,136,"M","T.Nonparole.C",14
+"CEFR1D","San Martino",6,141,"F","T.Nonparole.C",18
+"CETH1D","San Martino",6,139,"M","T.Nonparole.C",21
+"CUFE1D","San Martino",6,139,"F","T.Nonparole.C",17
+"ESNA1D","San Martino",6,143,"M","T.Nonparole.C",24
+"FUSA1D","San Martino",6,139,"F","T.Nonparole.C",20
+"GAGI1D","San Martino",6,147,"F","T.Nonparole.C",20
+"GENI1D","San Martino",6,148,"M","T.Nonparole.C",28
+"GUGI1D","San Martino",6,145,"F","T.Nonparole.C",13
+"HELE1D","San Martino",6,147,"M","T.Nonparole.C",14
+"MILU1D","San Martino",6,144,"M","T.Nonparole.C",16
+"NAEM1D","San Martino",6,136,"F","T.Nonparole.C",17
+"PAMA1D","San Martino",6,142,"F","T.Nonparole.C",16
+"TESA1D","San Martino",6,147,"F","T.Nonparole.C",17
+"ZADA1D","San Martino",6,143,"M","T.Nonparole.C",12
+"NTST1D","San Martino",6,138,"M","T.Nonparole.C",63

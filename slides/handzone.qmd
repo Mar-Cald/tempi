@@ -1,0 +1,886 @@
+---
+title: "Reaction Times"
+author: "Margherita Calderan"
+format: 
+   revealjs:
+     logo: psicostatLogo.png
+     margin: 0.1
+html-math-method:
+  method: mathml
+execute: 
+  cache: true
+---
+
+```{r, echo=FALSE, message=FALSE,warning=FALSE}
+pkgs=c("brms", "ggplot2", "overlapping", "ggpubr",
+          "readr","lme4")
+invisible(lapply(pkgs, require, character.only=TRUE, quietly=TRUE))
+theme_set(labs_pubr(base_size = 15))
+```
+
+##  {.center}
+
+***"First, RT distributions are decidedly non-normal — they are almost always skewed to the right.***
+
+***Second, this skew increases with task difficulty.***
+
+***Third, the spread of the distribution increases with the mean."***
+
+*([Wagenmakers & Brown, 2007](https://www.ejwagenmakers.com/2007/WagenmakersBrown2007.pdf))*
+
+## Reaction time distributions
+
+-   Shifted-LogNormal
+-   Inverse Gaussian (Wald)
+-   Wiener et al.
+-   Gamma
+-   Ex-Gaussian
+-   Weibull
+-   ...
+
+## 
+
+```{r, warning=FALSE,message=FALSE}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .4
+#| out-width: 80%
+#| fig-width: 9
+
+N = 10000
+dat = data.frame(rt = c(rgamma(N, shape = 2.2, rate = 4.8)+.12,
+  rshifted_lnorm(N, meanlog = -.8, sdlog = .75, shift = .15),
+  rexgaussian(N, mu = 0.7, sigma = .07, beta = 0.4),
+  rinv_gaussian(N, mu = .56,shape = 1.1)+.12,
+  rwiener(N,alpha = 2, tau = .15, beta = 0.5, delta = 1.5 , types = "q")),
+  Dist = factor(rep(c("ShiftGamma","ShiftLogNorm","ExGau", "ShiftInvGau", "Wiener"), each = N)))
+
+ggplot(dat,aes(x = rt, fill = Dist))+geom_density(alpha = .4, lwd = 1,adjust = 2)+
+  scale_x_continuous(breaks = seq(0,3,by = .5), limits = c(-0.5,3.5))+
+  facet_wrap(~Dist)
+```
+
+## Which one to choose?
+
+-   Interpretability
+-   Expertise
+-   Feasibility (e.g., number of parameters)
+
+## Interpretability
+
+### *Type of parameters* - Jonas Kristoffer
+
+-   **Difficulty-like** : influence both the mean and SD. Ideally a value that reflects the center (median?).
+-   **Onset/Shift** : the earliest possible reaction time.
+-   **Scale** : stretches or squeezes the distribution over and above difficulty, without (severely) changing the location (onset and center).
+
+## Difficulty-like
+
+Influences both the mean and SD.
+
+::::: columns
+::: {.column width="70%"}
+```{r}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 6
+
+N = 10000
+dat = data.frame(rt = c(rshifted_lnorm(N, meanlog = -.85, sdlog = .7, shift = .2),
+                        rshifted_lnorm(N, meanlog = -.5, sdlog = .7, shift = .2)),
+                 Group = factor(rep(c("Easy","Hard"), each = N)))
+
+ggplot(dat,aes(x = rt, fill = Group))+geom_density(alpha = .4, lwd = 1,adjust = 2)+
+  scale_x_continuous(breaks = seq(0,3,by = .3), limits = c(0,3))
+```
+:::
+
+::: {.column width="30%"}
+<br>
+
+```{r}
+cat(sprintf("Median (Easy): %.3f\n", median(dat$rt[dat$Group == "Easy"])))
+cat(sprintf("Median (Hard): %.3f\n", median(dat$rt[dat$Group == "Hard"])))
+cat(sprintf("Mean (Easy): %.3f\n", mean(dat$rt[dat$Group == "Easy"])))
+cat(sprintf("Mean (Hard): %.3f\n", mean(dat$rt[dat$Group == "Hard"])))
+cat(sprintf("SD (Easy): %.3f\n", sd(dat$rt[dat$Group == "Easy"])))
+cat(sprintf("SD (Hard): %.3f\n", sd(dat$rt[dat$Group == "Hard"])))
+```
+:::
+:::::
+
+## Onset - Shift
+
+Influences the earliest possible reaction time.
+
+::::: columns
+::: {.column width="70%"}
+```{r, warning=FALSE, message=FALSE}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 6
+
+N = 10000
+dat = data.frame(rt = c(rshifted_lnorm(N, meanlog = -.85, sdlog = .7, shift = .2),
+                        rshifted_lnorm(N, meanlog = -.85, sdlog = .7, shift = .9)),
+                 Group = factor(rep(c("valid cue","invalid cue"), each = N)))
+
+ggplot(dat,aes(x = rt, fill = Group))+geom_density(alpha = .4, lwd = 1,adjust = 2)+
+  scale_x_continuous(breaks = seq(0,3,by = .3), limits = c(0,3))
+
+```
+:::
+
+::: {.column width="30%"}
+<br>
+
+```{r}
+cat(sprintf("Median (val): %.3f\n", median(dat$rt[dat$Group == "valid cue"])))
+cat(sprintf("Median (inv): %.3f\n", median(dat$rt[dat$Group == "invalid cue"])))
+cat(sprintf("SD (val): %.3f\n", sd(dat$rt[dat$Group == "valid cue"])))
+cat(sprintf("SD (inv): %.3f\n", sd(dat$rt[dat$Group == "invalid cue"])))
+```
+:::
+:::::
+
+## Scale
+
+Stretches or squeezes the distribution, without (severely) changing the location (onset and center).
+
+::::: columns
+::: {.column width="70%"}
+```{r, warning=FALSE, message=FALSE}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 6
+
+N = 10000
+dat = data.frame(rt = c(rshifted_lnorm(N, meanlog = -.85, sdlog = .7, shift = .2),
+                        rshifted_lnorm(N, meanlog = -.85, sdlog = 2, shift = .2)),
+                 Group = factor(rep(c("Control","Patient"), each = N)))
+
+ggplot(dat,aes(x = rt, fill = Group))+geom_density(alpha = .4, lwd = 1,adjust = 2)+
+  scale_x_continuous(breaks = seq(0,3,by = .3), limits = c(0.1,3))
+
+```
+:::
+
+::: {.column width="30%"}
+<br>
+
+```{r}
+cat(sprintf("Median (Cont): %.3f\n", median(dat$rt[dat$Group == "Control"])))
+cat(sprintf("Median (Pat): %.3f\n", median(dat$rt[dat$Group == "Patient"])))
+cat(sprintf("Mean (Cont): %.3f\n", mean(dat$rt[dat$Group == "Control"])))
+cat(sprintf("Mean (Pat): %.3f\n", mean(dat$rt[dat$Group == "Patient"])))
+cat(sprintf("SD (Cont): %.3f\n", sd(dat$rt[dat$Group == "Control"])))
+cat(sprintf("SD (Pat): %.3f\n", sd(dat$rt[dat$Group == "Patient"])))
+```
+:::
+:::::
+
+##  {.center}
+
+Ideally, we should use distribution that can effectively separate three key parameters: Difficulty, Onset, and Scale...
+
+## Expertise {.center}
+
+### *lme4*
+
+Gamma vs. Inverse Gaussian
+
+##  {.smaller}
+
+::::: columns
+::: {.column width="60%"}
+**Gamma**
+
+-   *α* \> 0 shape
+
+-   *λ* \> 0 rate
+
+\begin{equation}
+f(x; \alpha, \lambda) = \frac{\lambda^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\lambda x}
+\end{equation}
+
+<br>
+
+**Inverse Gaussian**
+
+-   *μ* \> 0 mean
+
+-   *λ* \> 0 shape
+
+\begin{equation}
+f(x; \mu, \lambda) = \sqrt{\tfrac{\lambda}{2\pi x^3}}\ \exp\left(-\tfrac{\lambda(x-\mu)^2}{2\mu^2x}\right)
+\end{equation}
+:::
+
+::: {.column width="40%"}
+<br>
+
+Their are both **difficulty**-like parameter: *μ* = *α* / *λ,* $\sigma = \sqrt{\frac{\alpha}{\lambda^2}}$
+
+<br> <br> <br> <br> <br>
+
+**μ** reflects **difficulty** *μ* = *μ* , **λ** influence the **scale**. The larger **μ** and the smaller **λ**, the more variable the RTs: $\sigma = \sqrt{\frac{\mu^3}{\lambda}}$
+:::
+:::::
+
+## Gamma
+
+### *Interpretability*
+
+-   α **independent events**.
+
+-   λ **rate** of events per **unit** time.
+
+The **total time** for all events follows a Gamma distribution
+
+## Inverse Gaussian (Wald) {.smaller}
+
+### *Interpretability*
+
+The name "inverse Gaussian" comes from its relation to Brownian motion (or **Wiener process**). It "*describes the distribution of the time a Brownian motion with positive drift takes to reach a fixed positive level*" \[[Wikipedia](https://en.wikipedia.org/wiki/Inverse_Gaussian_distribution)\].
+
+::::: columns
+::: {.column width="60%"}
+```{r}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .5
+#| out-width: 95%
+#| fig-width: 7
+
+set.seed(11)
+rdm_path = function(drift, threshold, ndt, sp1=0,  noise_constant=1, dt=0.0001, max_rt=2) {
+  max_tsteps = max_rt/dt
+  
+  # initialize the diffusion process
+  tstep = 0
+  x1 = c(sp1*threshold) # vector of accumulated evidence at t=tstep
+  time = c(ndt)
+  
+  # start accumulating
+  while (x1[tstep+1] < threshold  & tstep < max_tsteps) {
+    x1 = c(x1, x1[tstep+1] + rnorm(mean=drift*dt, sd=noise_constant*sqrt(dt), n=1))
+    time = c(time, dt*tstep + ndt)
+    tstep = tstep + 1
+  }
+  return (data.frame(time=time, x=x1, accumulator=rep(1, length(x1))))
+}
+
+drift = 1;threshold = 2; ndt = .1
+
+sim_path = rdm_path(drift = drift,threshold = threshold, ndt = .1)
+
+ggplot(data = sim_path, aes(x = time, y = x))+
+  geom_line(size = 1, color = "blue4") +
+  geom_hline(yintercept=threshold, size=1) 
+
+```
+:::
+
+::: {.column width="40%"}
+<br>
+
+*Spoiler: [Racing Diffusion Model](https://link.springer.com/article/10.3758/s13423-020-01719-6)* ![](firing.png){fig-align="center" width="100%"}
+:::
+:::::
+
+## [Link log](https://github.com/EnricoToffalini/slides/tree/main/linkfunc)!
+
+Logarithms model proportional changes rather than absolute differences.
+
+::::: columns
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .8
+#| out-width: 95%
+#| fig-width: 5
+# Set seed for reproducibility
+set.seed(123)
+
+# Parameters for simulation
+n = 1000  # Number of observations
+a = 6.5  # Baseline intercept for the log-transformed mean (mu)
+b = 0.02  # Effect of covariate X
+x = rnorm(n, 0, 0.05)  
+sigma = 0.5  # Standard deviation of the log-transformed RTs
+
+mu = a + b*x
+
+# Effect of X on mu (mean log RT)
+RT = rlnorm(n, meanlog = mu, sdlog = sigma)  # Log-normal data
+
+ggplot(data.frame(rt = RT), aes(x = rt)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "lightblue", color = "black", alpha = 0.6) +
+  labs(title = "Distribution of Simulated RTs", 
+       x = "RTs (ms)", y = "Density") 
+
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .8
+#| out-width: 95%
+#| fig-width: 5
+RT_diff = exp(log(RT) + 0.03) - RT  
+
+ggplot(data.frame(mu = RT, relative_change = RT_diff), 
+       aes(x = mu, y = RT_diff)) +
+  geom_point(alpha = 0.6, color = "red") +
+  labs(title = "Change in log scale = 0.03", 
+       x = "RT ms", y = "Change in RT ms") +
+  scale_x_continuous(breaks = seq(0,4000,400))+
+  scale_y_continuous(breaks = seq(0,120,10))
+```
+:::
+:::::
+
+## Reading time
+
+High frequency vs. low frequency words, children 9-15 y.o.
+
+```{r}
+#| fig-asp: .4
+#| out-width: 70%
+#| fig-width: 9
+
+dat_read=read_csv("data/time-readingWordLists.csv")
+
+dat_e = dat_read[dat_read$time < 100 & 
+                   grepl(pattern = "Parole", dat_read$listType), ]
+
+dat_e$freq = factor(c(rep("alta", 238),rep("bassa",238)))
+contrasts(dat_e$freq) = contr.sum(2)/2
+       
+dat_e$age = scale(dat_e$Age_months)[,1]
+dat_e$grade = scale(dat_e$Grade)[,1]
+
+ggdensity(dat_e, x = "time",
+          add = "median", rug = TRUE,
+          color = c("freq"), palette = c("black", "red"))+
+  xlim(0,max(dat_e$time + 10))
+```
+
+
+## Inverse Gaussian vs. Gamma
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+mInv = lme4::glmer(time ~ freq  + age + (1|ID), 
+                    data = dat_e, family = inverse.gaussian(link = "log"))
+sumInv = summary(mInv)
+
+mGam = lme4::glmer(time ~ freq  + age + (1|ID), 
+                    data = dat_e, family = Gamma(link = "log"))
+sumGam = summary(mGam)
+```
+
+::::: columns
+::: {.column width="50%"}
+**Inverse Gaussian**
+
+```{r}
+sumInv$coefficients[,1:2]
+```
+:::
+
+::: {.column width="50%"}
+**Gamma**
+
+```{r}
+sumGam$coefficients[,1:2]
+```
+:::
+:::::
+
+## Posterior predictions
+
+**Inverse Gaussian**
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .4
+#| out-width: 70%
+#| fig-width: 9
+ppInv = performance::check_predictions(mInv, iterations = 100, 
+                               type = "density")
+time = rowMeans(ppInv)
+dat_e_plot = rbind(dat_e[,c("freq","time")], cbind(dat_e[,"freq"], time))
+dat_e_plot$type = as.factor(c(rep("real", nrow(dat_e)),rep("pred",length(time))))
+
+ggplot(dat_e_plot, aes(x = time, fill = type))+
+  geom_density(alpha = .5)+facet_wrap(~freq)+xlim(0,max(dat_e_plot$time))
+
+```
+
+## Posterior predictions
+
+**Gamma**
+
+```{r, warning=FALSE, message=FALSE}
+#| echo: true
+#| code-fold: true
+#| fig-asp: .4
+#| out-width: 70%
+#| fig-width: 9
+ppGam = performance::check_predictions(mGam, iterations = 100, 
+                               type = "density")
+time = rowMeans(ppGam)
+dat_e_plot = rbind(dat_e[,c("freq","time")], cbind(dat_e[,"freq"], time))
+dat_e_plot$type = as.factor(c(rep("real", nrow(dat_e)),rep("pred",length(time))))
+
+ggplot(dat_e_plot, aes(x = time, fill = type))+
+  geom_density(alpha = .5)+facet_wrap(~freq)+xlim(0,max(dat_e_plot$time))
+```
+
+## lme4
+
+-   Inverse Gaussian, correlation real pred = 0.771
+-   Gamma, correlation real pred = 0.773
+
+```{r}
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 9
+
+loo_predict = function(obj) {
+  yhat = numeric(length = nrow(dat_e) )
+  for(i in 1:nrow(dat_e)){
+    yhat[i] = predict(update(obj, data = dat_e[-i, ]), dat_e[i,], type = "response")
+  }
+  return(data.frame(result = yhat, row.names = NULL))
+}
+
+
+tInv=loo_predict(mInv)$result
+tGam=loo_predict(mGam)$result
+real_rt = dat_e$time
+
+
+df_plot_cor = data.frame(pred = c(tInv,tGam), 
+                         freq = c(dat_e_plot$freq),
+                         Dist = factor( x = 
+                                          rep(c("Inverse Gaussian","Gamma"), each = length(tInv)),
+                                        levels = c("Inverse Gaussian","Gamma")),
+                         real = rep(real_rt, times = 2))
+
+#cor(df_plot_cor$pred[df_plot_cor$Dist=="Inverse Gaussian"],df_plot_cor$real[df_plot_cor$Dist=="Inverse Gaussian"])
+
+#cor(df_plot_cor$pred[df_plot_cor$Dist=="Gamma"],df_plot_cor$real[df_plot_cor$Dist=="Gamma"])
+
+ggplot(df_plot_cor, aes(y = real, x = pred, color = Dist))+
+  geom_point()+
+  geom_abline(intercept = 0, slope = 1,linewidth = 1)+
+  facet_wrap(~freq)
+
+```
+
+## Bayesian ... :)
+
+**Inverse Gaussian** (*Brms* non-info prior)
+
+```{r}
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 9
+mInv_brms=readRDS('modInv_e.rds')
+pp_check(mInv_brms, ndraws = 100, type = "dens_overlay_grouped", 
+         group = "freq")+ xlim(0,90)
+```
+
+## Bayesian ... :)
+
+**Gamma** (*Brms* non-info prior)
+
+```{r, warning=FALSE, message=FALSE}
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 9
+mGam_brms=readRDS('modGam_e.rds')
+pp_check(mGam_brms, ndraws = 100, type = "dens_overlay_grouped", 
+         group = "freq")+ xlim(0,90)
+```
+
+## RSS {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+**Frequentist**
+
+```{r}
+# Calculate residuals
+ResidualsInv= sum((real_rt - tInv)^2)
+ResidualsGam= sum((real_rt - tGam)^2)
+cat("Inverse Gaussian:", ResidualsInv, "\n")
+cat("Gamma:", ResidualsGam, "\n")
+```
+
+<br>
+
+*Inverse Gaussian*
+
+```{r}
+sumInv$coefficients[,1:2]
+```
+
+*Gamma*
+
+```{r}
+sumGam$coefficients[,1:2]
+```
+:::
+
+::: {.column width="50%"}
+**Bayesian**
+
+```{r, warning=FALSE, message=FALSE}
+fitInv=add_criterion(mInv_brms, "loo", moment_match = TRUE, cores = 4)
+fitGam=add_criterion(mGam_brms, "loo", moment_match = TRUE, cores = 4)
+loo_compare(fitInv,fitGam)
+```
+
+<br>
+
+*Inverse Gaussian*
+
+```{r}
+round(posterior_summary(mInv_brms)[c(1,2,3),],3)
+```
+
+*Gamma*
+
+```{r}
+round(posterior_summary(mGam_brms)[c(1,2,3),],3)
+```
+:::
+:::::
+
+## Shifted LogNormal {.smaller}
+
+### *Interpretability*
+
+If Y is log-normally distributed, then log(Y) follows a normal distribution. The distribution is defined directly for Y, not for a transformed version of Y!
+
+-   ${\displaystyle  \mu \in ( -\infty ,+\infty  ) }$ - influence **difficulty**. Median = shift + exp(μ).
+
+-   *σ* \> 0 **scale** - increases mean = $\theta + \exp\left( \mu + \frac{\sigma^2}{2} \right)$ (but not the median).
+
+-   ***θ*** \> 0 - earliest possible response.
+
+\begin{equation}
+f(x; \mu, \sigma, \theta) =\frac{1}{(x - \theta)\sigma\sqrt{2\pi}} \exp\left[-\frac{1}{2}\left(\frac{\ln(x - \theta) - \mu}{\sigma}\right)^2\right]
+\end{equation}
+
+## Shifted LogNormal ([Race](https://bruno.nicenboim.me/bayescogsci/ch-lognormalrace.html#sec-acccoding))
+
+![](lognormal.png){fig-align="center" width="80%"}
+
+## Shifted LogNormal
+
+::::: columns
+::: {.column width="50%"}
+```{r}
+#| fig-asp: .8
+#| out-width: 95%
+#| fig-width: 5
+
+data = readRDS("data.rds")
+
+
+ggplot(data.frame(rt = data$rt), aes(x = data$rt)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "lightblue", color = "black", alpha = 0.6) +
+  labs(title = "Distribution of Simulated RTs", 
+       x = "RTs (ms)", y = "Density") 
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| fig-asp: .8
+#| out-width: 95%
+#| fig-width: 5
+
+ggplot(data.frame(rt = data$log_rt), aes(x = data$log_rt)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "lightblue", color = "black", alpha = 0.6) +
+  labs(title = "Distribution of Simulated RTs", 
+       x = "log(RTs)", y = "Density") 
+```
+:::
+:::::
+
+## Shifted-LogNormal
+
+::::: columns
+::: {.column width="50%"}
+```{r, warning=FALSE, message=FALSE}
+#| fig-asp: .8
+#| out-width: 95%
+#| fig-width: 5
+
+fitN = readRDS("fitN.rds")
+
+fitLN =  readRDS("fitLN.rds")
+
+pred_normal = exp(posterior_predict(fitN, ndraws = 200))
+pred_lognormal = posterior_predict(fitLN, ndraws = 200)
+
+RT = data$rt
+
+# Prepara i dati per il plot
+dataPlotNorm = data.frame(
+  rt = c(RT, as.vector(pred_normal)),
+  type = c(rep("Reale",length(RT)),rep("Normal", length(pred_normal))))
+
+# Crea il plot
+ggplot(dataPlotNorm, aes(x = rt, fill = type)) +
+  geom_density(alpha = 0.5) +
+  scale_fill_manual(values = 
+                      c("Reale" = "grey", 
+                        "Normal" = "blue", "Log-normale" = "red")) +
+  labs(title = "Confronto tra dati reali e previsioni dei modelli",
+       x = "Tempo di reazione",
+       y = "Densità",
+       fill = "Tipo di dato") +
+  xlim(0, max(RT)) +  
+  theme(legend.position = "bottom")
+
+
+cat(sprintf("Median real RT: %.3f\n", median(RT)))
+cat(sprintf("Median predicted RT: %.3f\n", median(pred_normal)))
+cat(sprintf("Error: %.3f\n", median(RT)- median(pred_normal)))
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| fig-asp: .8
+#| out-width: 95%
+#| fig-width: 5
+# Prepara i dati per il plot
+dataPlotLogNorm = data.frame(
+  rt = c(RT, as.vector(pred_lognormal)),
+  type = c(rep("Reale",length(RT)),rep("Shifted-LogNormal", length(pred_lognormal))))
+
+ggplot(dataPlotLogNorm, aes(x = rt, fill = type)) +
+  geom_density(alpha = 0.5) +
+  scale_fill_manual(values = 
+                      c("Reale" = "grey", 
+                        "Normale" = "blue", "Shifted-LogNormal" = "red")) +
+  labs(title = "Confronto tra dati reali e previsioni dei modelli",
+       x = "Tempo di reazione",
+       y = "Densità",
+       fill = "Tipo di dato") +
+  xlim(0, max(RT)) +  
+  theme(legend.position = "bottom")
+
+cat(sprintf("Median real RT: %.3f\n", median(RT)))
+cat(sprintf("Median predicted RT: %.3f\n", median(pred_lognormal)))
+cat(sprintf("Error: %.3f\n", median(RT)- median(pred_lognormal)))
+```
+:::
+:::::
+
+## 
+
+### But Feasibility :(
+<br>
+$$
+\begin{aligned}
+\mu &\sim 1 +\text{age} + \text{freq} + (1 | \text{ID}) \\
+\theta &\sim 1 + (1 | \text{ID})
+\end{aligned}
+$$ 
+<br> 
+
+```{r, warning=TRUE}
+mShift_brms_var=readRDS('modShift_e_ndt_var.rds')
+summary(mShift_brms_var)
+
+```
+
+## 
+<br>
+<br>
+$$
+\begin{aligned}
+\mu &\sim 1 +\text{age} +\text{freq} + (1 | \text{ID}) \\
+\theta &\sim 1 
+\end{aligned}
+$$ <br>
+
+```{r}
+mShift_brms=readRDS('modShift_e_ndt_novar.rds')
+summary(mShift_brms)
+
+```
+
+## Model performance
+
+::::: columns
+::: {.column width="45%"}
+<br> <br> <br>
+
+```{r}
+fitShift=add_criterion(mShift_brms, "loo", moment_match = TRUE,
+                       core = 4)
+loo_compare(fitInv,fitGam, fitShift)
+```
+:::
+
+::: {.column width="55%"}
+<br> <br> correlation = 0.94
+
+```{r}
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 6
+shiftpred = predict(mShift_brms)
+shiftpred = rowMeans(shiftpred)
+df_plot_cor = data.frame(pred = shiftpred, 
+                         real = real_rt)
+
+ggplot(df_plot_cor, aes(y = real, x = pred))+
+  geom_point(color = "purple")+
+  geom_abline(intercept = 0, slope = 1,linewidth = 1)
+#cor(df_plot_cor$pred,df_plot_cor$real)
+```
+:::
+:::::
+
+## Posterior predictions
+
+```{r}
+#| fig-asp: .4
+#| out-width: 95%
+#| fig-width: 9
+pp_check(mShift_brms, ndraws = 100, type = "dens_overlay_grouped", 
+         group = "freq")+ xlim(0,90)
+```
+
+## Shifted LogNormal {.smaller}
+
+### *Feasibility* (and *theory* ?)
+
+[Experiment](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1439397/full): participants viewed a central prime—either a real word or pseudo-word—followed by a spatial cue directing them to a target on the left or right, which they located by pressing a key.
+
+::::: columns
+::: {.column width="50%"}
+**label**
+
+```{r}
+#| fig-asp: .7
+#| out-width: 90%
+#| fig-width: 6
+dat_g=read_csv("data/data_clean_g.csv")
+dat_g = dat_g[dat_g$accuracy == 1,]|>na.omit()
+
+ggdensity(dat_g, x = "reaction_time",
+          add = "median", rug = TRUE,
+          color = c("label"), palette = c("black", "red"))+
+  xlim(0,max(dat_g$reaction_time + 10))
+```
+:::
+
+::: {.column width="50%"}
+**cue validity**
+
+```{r, warning=FALSE, message=FALSE}
+#| fig-asp: .7
+#| out-width: 90%
+#| fig-width: 6
+ggdensity(dat_g, x = "reaction_time",
+          add = "median", rug = TRUE,
+          color = c("cue"), palette = c("black", "red"))+
+  xlim(0,max(dat_g$reaction_time + 10))
+```
+:::
+:::::
+
+## Shifted LogNormal
+
+<br>
+
+$$
+\begin{aligned}
+\mu &\sim 1 +\text{label} + (1 + \text{label} | \text{Exp_Subject_Id}) \\
+\theta &\sim 1 + \text{cue} + (1 + \text{cue} | \text{Exp_Subject_Id})
+\end{aligned}
+$$
+
+<br>
+
+```{r}
+mG_brms=readRDS('mod_brms_shift_g.rds')
+round(posterior_summary(mG_brms)[1:4,],3)
+```
+
+
+
+##
+
+
+```{r}
+brms::conditional_effects(mG_brms, effects = "label",theme =theme_pubr()) 
+```
+
+
+##
+
+```{r}
+brms::conditional_effects(mG_brms, effects = "cue", theme =theme_pubr(base_size = 10))
+```
+
+
+## PP-Check
+
+**label**
+
+```{r}
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 6
+pp_check(mG_brms, nsamples = 100, type = "dens_overlay_grouped", 
+         group = "label")
+```
+
+## PP-Check
+
+**cue validity**
+
+```{r, warning=FALSE, message=FALSE}
+#| fig-asp: .4
+#| out-width: 90%
+#| fig-width: 6
+pp_check(mG_brms, nsamples = 100, type = "dens_overlay_grouped", 
+         group = "cue")
+```
+
+## Correlation check - be careful
+
+```{r}
+#| fig-asp: .7
+#| out-width: 95%
+#| fig-width: 9
+bayesplot::mcmc_pairs(mG_brms, pars = c("b_Intercept","b_ndt_Intercept","b_label1", "b_ndt_cue1","sigma"))
+```
+
+## [**ShinyApp**](https://lindeloev.github.io/shiny-rt/) - Jonas Kristoffer
+
+![](rt_cheat_sheet.png){fig-align="center" width="80%"}
