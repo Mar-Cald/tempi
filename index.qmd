@@ -9,7 +9,9 @@ title: "Reaction times"
 
 ## Materials
 
--   **RT distributions**  - [Slides](slides/handzone.html) - Credits: [Jonas Kristoffer Lindeløv](https://lindeloev.github.io/shiny-rt/)
+-   **RT distributions**  - [Slides](slides/handzone.html) - 
+
+Credits: [Jonas Kristoffer Lindeløv](https://lindeloev.github.io/shiny-rt/)
 
 ### Soon...
 -   **Evidence Accumulation Models** - [Slides](slides/evidenceaccumulation.html)
